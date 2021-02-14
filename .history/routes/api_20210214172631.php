@@ -13,5 +13,7 @@ Route::post("login", [UserController::class, "login"]);
 
 // sanctum auth middleware routes
 
+// Route::middleware('auth:sanctum')->group(function() {
+//     Route::resource('tasks', TaskController::class);
 
-Route::resource('tasks', TaskController::class)->middleware('auth:sanctum');
+// });
